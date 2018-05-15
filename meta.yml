@@ -1,0 +1,8 @@
+elems:
+
+  - src:  ^(override.conf)$
+    dst:  /etc/systemd/system/docker.service.d/<1>
+    only: f?docker && f?systemd
+
+
+# vim: set filetype=eruby.yaml :
